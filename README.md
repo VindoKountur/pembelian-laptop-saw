@@ -9,4 +9,4 @@
 * [https://algoritmasawbelilaptop.netlify.com/](https://algoritmasawbelilaptop.netlify.com/)
 
 ### Backend untuk menghitung
-* [https://make-life-easier.herokuapp.com/](My Personal API)
+* [My Personal API](https://make-life-easier.herokuapp.com/)
