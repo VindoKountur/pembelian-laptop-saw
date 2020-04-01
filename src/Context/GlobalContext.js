@@ -7,7 +7,7 @@ export const GlobalProvider = props => {
     { nama: "Harga", nilai: 5 },
     { nama: "RAM", nilai: 2 },
     { nama: "Processor", nilai: 2 },
-    { nama: "Kapasitas (HD)", nilai: 1 }
+    { nama: "Kapasitas", nilai: 1 }
   ]);
   const [daftarAlternatif, setDaftarAlternatif] = useState([
     // { nama: "tes nama", harga: 30, ram: 8, processor: 5, kapasitas: 1000 },

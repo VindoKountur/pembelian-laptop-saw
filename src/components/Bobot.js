@@ -2,7 +2,7 @@ import React, { useState, useContext, useCallback, useEffect } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 
 export const Bobot = () => {
-  const [bobot, setBobot, , ] = useContext(GlobalContext);
+  const [bobot, setBobot, ,] = useContext(GlobalContext);
   const [jumlahBobot, setJumlahBobot] = useState(0);
 
   useEffect(() => {
@@ -27,7 +27,10 @@ export const Bobot = () => {
   );
 
   const alert10 = (
-    <p id="alertBelum10" className="text-white bg-red-700 w-full text-center py-3">
+    <p
+      id="alertBelum10"
+      className="text-white bg-red-700 w-full text-center py-3"
+    >
       Jumlah Bobot Harus 10
     </p>
   );
@@ -52,10 +55,10 @@ export const Bobot = () => {
             </div>
           </div>
         ))}
-        ;
       </div>
       <p className="pb-3 w-10/12 m-auto font-semibold">
-        Note : Berikan bobot untuk tiap kategori, jumlah total bobot harus bernilai 10
+        Note : Berikan bobot untuk tiap kategori, jumlah total bobot harus
+        bernilai 10
       </p>
     </div>
   );
