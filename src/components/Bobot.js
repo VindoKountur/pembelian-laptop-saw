@@ -55,7 +55,7 @@ export const Bobot = () => {
         ;
       </div>
       <p className="pb-3 w-10/12 m-auto font-semibold">
-        Note : Jumlah total bobot harus bernilai 10
+        Note : Berikan bobot untuk tiap kategori, jumlah total bobot harus bernilai 10
       </p>
     </div>
   );
