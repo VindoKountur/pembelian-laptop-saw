@@ -15,25 +15,37 @@ export const Alternatif = ({ value, idx, hapusAlternatif }) => {
         </span>
         <div className="ml-2 w-11/12 py-2">
           <h3 className="font-semibold leading-10">"{value.nama}"</h3>
-          <div className="flex justify-start items-center">
-            <p className="ml-2 w-2/12">Harga</p>
-            <p className="ml-2">:</p>
-            <p className="ml-2">{value.harga}</p>
+          <div className="flex justify-between items-center">
+            <div className="w-4/12">
+              <p className="ml-2">Harga</p>
+            </div>
+            <div className="w-8/12">
+              <p className="ml-2">{value.harga}</p>
+            </div>
           </div>
-          <div className="flex justify-start items-center">
-            <p className="ml-2 w-2/12">RAM</p>
-            <p className="ml-2">:</p>
-            <p className="ml-2">{value.ram}</p>
+          <div className="flex justify-between items-center">
+            <div className="w-4/12">
+              <p className="ml-2">RAM</p>
+            </div>
+            <div className="w-8/12">
+              <p className="ml-2">{value.ram}</p>
+            </div>
           </div>
-          <div className="flex justify-start items-center">
-            <p className="ml-2 w-2/12">Processor</p>
-            <p className="ml-2">:</p>
-            <p className="ml-2">{value.processor}</p>
+          <div className="flex justify-between items-center">
+            <div className="w-4/12">
+              <p className="ml-2">Processor</p>
+            </div>
+            <div className="w-8/12">
+              <p className="ml-2">{value.processor}</p>
+            </div>
           </div>
-          <div className="flex justify-start items-center">
-            <p className="ml-2 w-2/12">Kapasitas</p>
-            <p className="ml-2">:</p>
-            <p className="ml-2">{value.kapasitas}</p>
+          <div className="flex justify-between items-center">
+            <div className="w-4/12">
+              <p className="ml-2">Kapasitas</p>
+            </div>
+            <div className="w-8/12">
+              <p className="ml-2">{value.kapasitas}</p>
+            </div>
           </div>
         </div>
       </div>
