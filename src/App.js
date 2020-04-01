@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Header } from "./components/Header";
+import { Bobot } from "./components/Bobot";
+import { FormAlternatif } from "./components/FormAlternatif";
+import { ListAlternatif } from "./components/ListAlternatif";
 
-function App() {
+import { GlobalProvider } from "./Context/GlobalContext";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="bg-gray-400">
+      <GlobalProvider>
+        <Header />
+        <Bobot />
+        {/* Form And List Component */}
+        <div className="flex-column md:flex md:items-start">
+          <FormAlternatif />
+          <ListAlternatif />
+        </div>
+        <p className="text-center bg-gray-900 text-gray-300 text-xs py-4">
+          &copy;2020 Lifeindo Kountur. All rights reserved.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </GlobalProvider>
     </div>
   );
-}
+};
 
 export default App;
