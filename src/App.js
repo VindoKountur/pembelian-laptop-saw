@@ -6,6 +6,8 @@ import { ListAlternatif } from "./components/ListAlternatif";
 
 import { GlobalProvider } from "./Context/GlobalContext";
 
+import linkedinIcon from "./img/linkedin_icon.png";
+
 const App = () => {
   return (
     <div className="bg-gray-400">
@@ -17,9 +19,21 @@ const App = () => {
           <FormAlternatif />
           <ListAlternatif />
         </div>
-        <p className="text-center bg-gray-900 text-gray-300 text-xs py-4">
-          &copy;2020 Lifeindo Kountur. All rights reserved.
-        </p>
+        <div className="flex justify-around items-center bg-gray-900 w-full py-4 text-gray-200">
+          <p>&copy;2020 Lifeindo Kountur</p>
+          <div>
+            <a
+              title="My linkedin 🙂"
+              className="flex items-center hover:text-gray-600"
+              href="https://www.linkedin.com/in/lifeindo-kountur"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinIcon} alt="Find me" />
+              <span className="ml-2">Find Me</span>
+            </a>
+          </div>
+        </div>
       </GlobalProvider>
     </div>
   );
